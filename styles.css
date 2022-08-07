@@ -5,6 +5,9 @@
     font-family: "Poppins", sans-serif;
 
 }
+#bar{
+    display: none;
+}
 .hero{
     background: url(Images/hero.png);
     background-size: cover;
@@ -35,11 +38,13 @@
 }
 .link1{
     display: flex;
+
     text-decoration: none;
     color: white;
     font-size: 13px; 
     font-weight: 400;
     padding-top: 12px;
+    
 }
 .main_image {
     display: flex;
@@ -60,3 +65,47 @@
 {
     font-weight: 450;
 }
+.main_image{
+    
+    display: flex;
+}
+ .input{
+    display: flex;
+    gap: 0px;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+#location{
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+
+    
+    
+    
+}
+#search{
+    border: none;
+    outline: none;
+    width: 45vw;
+    border-radius: 15px;
+    
+    
+}
+
+
+/* media query part for hero section */
+/* .navbar_menu{
+    display: none;
+}
+.hero_header .link1 {
+    display: none;
+    
+    
+}
+#bar{
+    display: inline;
+} */
