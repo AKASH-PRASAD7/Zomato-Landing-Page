@@ -8,6 +8,9 @@
 #bar{
     display: none;
 }
+#user{
+    display: none;
+}
 .hero{
     background: url(Images/hero.png);
     background-size: cover;
@@ -34,7 +37,7 @@
  .navbar_menu{
     display: flex;
     gap: 35px;
-    height: 10px;
+    height: 30px;
 }
 
 .link1{
@@ -122,10 +125,9 @@
         padding-left: 25px;
         padding-right: 0px;
         justify-content: space-between; 
-        
-        justify-content: flex-start;
+     
     }
-    .navbar_menu{
+    .navbar_menu .link{
         display: none;
     }
     
@@ -135,6 +137,16 @@
     #bar{
         display: flex;
         font-size: 22px;
+
+    }
+    #user{
+        display: flex;
+        font-size: 22px;
+        padding-right: 25px;
+        padding-top: 8px;
+        color: red;
+        
+
 
     }
     .main_image {
@@ -179,15 +191,7 @@
     margin-top: 6px;
     border-right: 1.4px solid lightgrey;
 }
-#search{
-    
-    border: none;
-    outline: none;
-    width: 60%;
-    height: 75%;
-    margin-top: 6px;
-    
-}
+
 #location_icon{
     margin-top: 14px;
     margin-left: 9px;
@@ -196,18 +200,327 @@
     color: palevioletred;
 }
     
-
 } 
-
-
-/* .navbar_menu{
-    display: none;
-}
-.hero_header .link1 {
-    display: none;
+@media (min-width: 375px) and (max-width: 810px){
+    .hero{
+        height: 53vh;
+    }
+    .hero_header{
+        display: flex;
+        padding-left: 25px;
+        padding-right: 0px;
+        justify-content: space-between; 
+     
+    }
+    .link1{
+        font-weight: 450;
+    }
+    .navbar_menu{
+        gap: 7px;
+    }
+    
+    .navbar_menu .link{
+       padding-top: 8px;
+       padding-right: 23px;
+       font-weight: 400;
+    }
     
     
+    .main_image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .im{
+        width: 285px;
+        margin-top: 8em;
+    } 
+     .main_image_heading{
+        font-size: 35px;
+        height: 15%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: -10.5px;
+        
+        font-weight: 350;
+    }
+
+.input{
+    display: flex;
+    gap: 10px;
+    background-color:white;
+    border-radius: 10px;
+    width: 95vw;
+    height: 55px;
+    
+    justify-content: space-around;
+   
 }
-#bar{
-    display: inline;
-} */
+#location{
+    width: 30%;
+    height: 75%;
+    border: none;
+    outline: none;
+    margin-top: 6px;
+    border-right: 1.4px solid lightgrey;
+}
+
+#location_icon{
+    display: flex;
+    margin-top: 14px;
+    margin-left: 9px;
+    font-size: 20px;
+    color: palevioletred;
+}
+#search{
+    width: 83%;
+}
+}
+
+.collect1{
+    display: flex;
+    flex-direction: row;
+    height: 19rem;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+.rice{
+    background: url(Images/rice.png);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    height: 14em;
+    width: 21rem;
+    margin-left: 11em;
+    border-radius: 4%;
+   align-items: flex-end;
+
+}
+.restra{
+    background: url(Images/restau.png);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    height: 14em;
+    width: 21rem;
+    border-radius: 4%;
+    align-items: flex-end;
+}
+.club{
+    background: url(Images/party.png);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    height: 14em;
+    width: 21rem;
+    margin-right: 11em;
+    border-radius: 4%;
+    align-items: flex-end;
+}
+.info1{
+    display: flex ;
+    background-color: white;
+    width: 100em;
+    height: 35%;
+    flex-direction: column;
+    border: 1px solid #e0e0e0
+}
+.rice_heading{
+  padding-left: 1em;
+  padding-top: 0.8em;
+  font-size: 1.2rem;
+  font-weight: 450;
+  color: rgb(47, 43, 43)
+  
+}
+.rice_info{
+    padding-left: 1em;
+    font-weight: 350;
+    color: rgb(44, 40, 40);
+    
+}
+.info2{
+    display: flex ;
+    background-color: white;
+    width: 100em;
+    height: 35%;
+    flex-direction: column;
+    border: 1px solid #e0e0e0
+}
+.restra_heading{
+    padding-left: 1em;
+    padding-top: 0.8em;
+    font-size: 1.2rem;
+    font-weight: 450;
+    color: rgb(47, 43, 43)
+
+}
+.restra_info{
+    padding-left: 1em;
+    font-weight: 350;
+    color: rgb(44, 40, 40);
+
+}
+.info3{
+    display: flex ;
+    background-color: white;
+    width: 100em;
+    height: 35%;
+    flex-direction: column;
+    border: 1px solid #e0e0e0
+}
+.club_heading{
+    padding-left: 1em;
+    padding-top: 0.8em;
+    font-size: 1.2rem;
+    font-weight: 450;
+    color: rgb(47, 43, 43)
+
+}
+.club_info{
+    padding-left: 1em;
+    font-weight: 350;
+    color: rgb(44, 40, 40);
+
+}
+.rice{
+    transition-delay: 0s;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;    
+}
+.rice:hover{
+    height: 15em;
+    width: 22rem;
+}
+.restra{
+   
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;  
+}
+.restra:hover{
+    height: 15em;
+    width: 22rem;
+
+}
+.club{
+    transition-delay: 0s;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;  
+}
+.club:hover{
+    height: 15em;
+    width: 22rem;
+}
+.collect2{
+    display: flex;
+    flex-direction: column;
+}
+.collect2_info{
+    display: flex;
+}
+.collect2{
+    padding-top: 3rem;
+    
+}
+.collect2 .heading{
+    margin-left: 9%;
+    margin-bottom: 0.1%;
+    font-size: 35px;
+}
+.info4{
+    margin-left: 9%;
+    margin-bottom: 2%;
+    color: rgb(47, 43, 43);
+    font-weight: 330;
+}
+.collect2_info{
+    display: flex;
+    justify-content: space-between;
+}
+.link4{
+    margin-right: 9%;
+    text-decoration: none;
+    color: tomato;
+
+}
+.cards{
+    display: flex;
+    height: 20rem;
+    gap: 20px;
+    justify-content: space-around;
+    color: #e0e0e0;
+}
+.card1{
+    background: url(Images/street.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    margin-left: 7em;
+    width: 18rem;
+    border-radius: 9px;
+    align-items: flex-end;
+}
+.card2{
+    background: url(Images/collection_food2.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    width: 18rem;
+    border-radius: 9px;
+    align-items: flex-end;
+}
+.card3{
+    background: url(Images/monument.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    width: 18rem;
+    border-radius: 9px;
+    align-items: flex-end;
+}
+.card4{
+    background: url(Images/biryani.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    margin-right: 7em;
+    width: 18rem;
+    border-radius: 9px;
+    align-items: flex-end;
+}
+
+.card1_title{
+   margin-left: 18px;
+}
+.card1_info{
+    margin-left: 18px;
+    font-size: small;
+}
+.card2_title{
+    margin-left: 18px;
+ }
+ .card2_info{
+     margin-left: 18px;
+     font-size: small;
+ }
+ 
+ .card3_title{
+    margin-left: 18px;
+ }
+ .card3_info{
+     margin-left: 18px;
+     font-size: small;
+ }
+ 
+ .card4_title{
+    margin-left: 18px;
+ }
+ .card4_info{
+     margin-left: 18px;
+     font-size: small;
+ }
+ 
