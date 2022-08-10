@@ -393,8 +393,8 @@
     transition-timing-function: ease-in-out;    
 }
 .rice:hover{
-    height: 15em;
-    width: 22rem;
+    height: 15.5em;
+    width: 22.5rem;
 }
 .restra{
    
@@ -402,9 +402,8 @@
     transition-timing-function: ease-in-out;  
 }
 .restra:hover{
-    height: 15em;
-    width: 22rem;
-
+    height: 15.5em;
+    width: 22.5rem;
 }
 .club{
     transition-delay: 0s;
@@ -412,19 +411,18 @@
     transition-timing-function: ease-in-out;  
 }
 .club:hover{
-    height: 15em;
-    width: 22rem;
+    height: 15.5em;
+    width: 22.5rem;
 }
 .collect2{
     display: flex;
     flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    
 }
 .collect2_info{
     display: flex;
-}
-.collect2{
-    padding-top: 3rem;
-    
 }
 .collect2 .heading{
     margin-left: 9%;
@@ -452,7 +450,7 @@
     height: 20rem;
     gap: 20px;
     justify-content: space-around;
-    color: #e0e0e0;
+    color: #ffffff;
 }
 .card1{
     background: url(Images/street.png);
@@ -463,6 +461,7 @@
     width: 18rem;
     border-radius: 9px;
     align-items: flex-end;
+    
 }
 .card2{
     background: url(Images/collection_food2.png);
@@ -495,32 +494,290 @@
 
 .card1_title{
    margin-left: 18px;
-}
+  font-weight: 650;
+   }
 .card1_info{
     margin-left: 18px;
     font-size: small;
+  font-weight: 650;
 }
 .card2_title{
     margin-left: 18px;
+   font-weight: 650;
  }
  .card2_info{
      margin-left: 18px;
      font-size: small;
+    font-weight: 650;
  }
  
  .card3_title{
     margin-left: 18px;
+   font-weight: 650;
  }
  .card3_info{
      margin-left: 18px;
      font-size: small;
+   font-weight: 650;
  }
  
  .card4_title{
     margin-left: 18px;
+   font-weight: 650;
  }
  .card4_info{
      margin-left: 18px;
      font-size: small;
+     font-weight: 650;
  }
  
+ @media (min-width: 375px) and (max-width: 810px){
+     /* .collect1{
+         /* flex-wrap: wrap; 
+     } 
+     */
+ }
+ 
+ .localitis{
+     margin-top: 3rem;
+     margin-bottom: 8rem;
+   }
+ .localitis_heading{
+    margin-left: 9%;
+    margin-bottom: 0.1%;
+    font-size: 40px;
+    color: rgb(54, 49, 49);
+
+ }
+ .boxes{
+    margin-right: 7em;
+    margin-left: 7em;
+     padding-top: 3rem ;
+     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+   }
+ .places{
+    border-radius: 10px;
+    box-shadow: 0.7px 0.7px 0.7px 0.7px   #d1c9c9;
+     height:80px;
+     border: 1px solid #dfdcdc;
+ }
+ 
+ .palce_heading,.place_info {
+     padding-left: 15px;
+ }
+.palce_heading{
+    margin-top: 20px;
+    font-size: larger;
+    color: rgb(33, 30, 30);
+}
+ .place_info{
+    color: rgb(83, 77, 77);
+ }
+ .phone{
+     display: flex;
+     background-color: rgba(242, 242, 242, 0.372);
+     margin-bottom: 1rem;
+     padding-bottom: 10rem;    
+ }
+ .app{ display: flex;}
+ .phonecontainer{
+     display: flex;
+     width: 40%;
+     height: 100%;
+     align-items: center;
+     justify-content: center;
+     margin-left: 7rem;
+ }
+ #phoneimg{
+     width: 70%;
+     margin: auto;
+     margin-left: 30%;
+     margin-top: 14%;
+  }
+ .getapp{ width: 60%;}
+ .getapp_heading{
+     font-size: 40px;
+     font-weight: 400;
+     padding-left: 2rem;
+     margin-bottom: 0.7rem;
+ }
+ .getapp_info{
+    padding-left: 2rem;
+    color: rgb(83, 77, 77);
+    padding-bottom: 1.5rem;
+ }
+ .radio{
+     display: flex;
+     gap: 35px;
+     padding-left: 2rem;
+     padding-bottom: 1.5rem;
+ }
+ .btn{
+     display: flex;
+     gap: 7px;
+ }
+ #email, #phone{
+     padding-top: 4rem;
+     width: 1.2rem;
+     accent-color: tomato;
+     cursor: pointer;
+ }
+ .input1{
+     display: flex;
+     justify-content: flex-start;
+     gap: 15px;
+     margin-left: 2rem;
+     height: 50px;
+     margin-bottom: 1.5rem;
+ }
+ #btn2{
+     color: white;
+     background-color: rgb(239, 79, 95);
+     border: none;
+     width: 140px;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+ .dwnld{
+    padding-left: 2rem;
+    color: rgb(83, 77, 77);
+    margin-bottom: 1.5rem;
+ }
+ .app_play{
+    padding-left: 2rem;
+    display: flex;
+    gap: 17px;
+ }
+ .play , .apple{
+     width: 150px;
+     cursor: pointer;
+    
+ }
+ .options{
+     display: grid;
+     grid-template-rows: repeat(4 ,1fr);
+     gap: 15px;
+}
+ .opt{
+     height: 70px;
+     width: 85vw;
+     margin: auto;
+     border-radius: 5px;
+     box-shadow: 0.7px 0.7px 0.7px 0.7px   #d1c9c9;
+     border: 1px solid #dfdcdc;
+     font-size: 20px;
+     color: rgb(59, 55, 55);
+     padding-left: 2%;
+     padding-top: 1%;
+ }
+ .head1{
+    margin-left: 6rem;
+    padding-bottom: 2rem;
+    font-size: 30px;
+     font-weight: 400;
+     color: rgb(31, 29, 29);
+    
+ }
+ .explore{
+     margin-bottom: 4.5rem;
+ }
+ footer{
+    background-color: rgba(242, 242, 242, 0.372);
+     padding-bottom: 5rem;
+ }
+ .disp23{
+    display: flex;  
+}
+ .aboutzoma{
+     display: grid;
+     grid-template-rows: repeat(auto ,1fr);
+     grid-gap: 15px;
+     /* background-color: cyan;
+     border: 1px solid red; */
+     width: 20vw;
+  
+ }
+
+ .about{
+     width: 200px;
+     height: 20px;
+     color: rgb(141, 129, 129);
+     font-size: smaller;
+     
+
+ }
+ .zomatitle{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    width: 200px;
+    height: 20px;
+ }
+ #zomatitle5{
+    height: 10px;
+ }
+  #unq1{
+     margin-left: 6rem;
+ }
+ #unq{
+    margin-right: 6rem;
+}
+ #a{
+     display: grid;
+     grid-gap: 5px;
+ }
+ .zoma_logo{
+     margin-left: 6rem;
+    margin-bottom: 3rem;
+    margin-left: 6rem;
+    padding-top: 3rem;
+ }
+ .zoma{
+    margin-right: 40rem;
+    width: 140px;
+    filter: invert(100%);
+ }
+ .india, .intern{
+    color: black;
+    background-color: rgba(242, 242, 242, 0.372);
+    border: none;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid gray;
+
+ }
+ .india{
+     margin-right: 1rem;
+ }
+ .iconx{
+     display: flex;
+     gap: 10px;
+ }
+ .iconx i{
+    font-size: 150%;
+    cursor: pointer;
+   }
+   .discription{
+    margin-left: 6rem;
+    margin-right: 7.5rem;
+    margin-top: 5.5rem;
+    margin-bottom: -2rem;
+ }
+ .discription p{
+     padding-top: 1.5rem;
+     font-size: 13px;
+     color: rgb(141, 129, 129);
+     border-top: solid 1px rgb(198, 183, 183);
+ }
+ .about:hover{
+     cursor: pointer;
+     color: rgb(32, 29, 29);
+
+ }
+ #in_flag{
+     display: flex;
+     
+ }
